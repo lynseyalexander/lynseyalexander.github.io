@@ -5,5 +5,5 @@
 layout: default
 title: Lynsey Alexander
 
-about_h1: Welcome to my portfolio
+about_h1: Welcome to my portfolio...
 ---

@@ -1,27 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
 .header {
-    background-color: crimson;
+    background-color: #ffffff;
+}
+
+.header h1 {
+    color: #06042e;
+    font-family: 'Barrio', cursive;
+    font-size: 52px;
+    text-align: center;
+    text-shadow: -2px 3px #b2afaf;
+    padding-top: 0.625em;
+    margin-bottom: 0;
+}
+
+.header h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 0;
 }
 
 .about {
-    background-color: brown;
+    padding: 2em;
 }
 
-.portfolio {
-    background-color:cyan;
+.about h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: #0a0a0a;
 }
 
-.skills {
-    background-color: darkorange;
+.about_desc p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #141414;
 }
 
+.key_skills h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #0a0a0a;
+    text-align: center;
+}
+
+.key_skills p {
+    text-align: center;
+    color: #141414;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.project_one, .project_two, .project_three, .project_four, .project_five, .project_six {
+    background-color: #ffffff;
+    margin: 1em 3.5em 1em 3.5em;
+    padding: 1em;
+}
+
+.portfolio h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.portfolio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.portfolio h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.portfolio p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.fa-link, .fa-github {
+    font-size: 26px;
+}
+
+.view_project {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 0;
+}
+
+.link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+.skills h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #c04747;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.fa-html5, .fa-css3-alt, .fa-js, .fa-vuejs, .fa-php, .fa-laravel, .fa-git-square, .fa-paint-brush, .fa-python, .fa-java {
+    font-size: 74px;
+    color: #c04747;
+    padding-top: 20px;
+}
 .blog {
-    background-color: greenyellow;
+    padding: 6em;
+}
+
+.blog h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+
+.blog p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.fa-eye {
+    font-size: 22px;
+}
+
+.blog_link {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 .contact {
-    background-color: midnightblue;
+    background-color: #ffffff;
 }
 
+.contact_github, .fa-behance, .fa-twitter {
+    font-size: 60px;
+}
 .footer {
     background-color: lightyellow;
+    text-align: center;
 }
+
