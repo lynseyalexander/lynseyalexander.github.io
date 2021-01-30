@@ -26,8 +26,135 @@
     margin-top: 0;
 }
 
+/* Common styles for menus */
+.menu {
+	line-height: 1;
+    margin: 0 auto 3em;
+}
+
+.menu_list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+    margin-top: 3em;
+    margin-bottom: 0;
+    margin-left: 3em;
+	padding: 0;
+	list-style: none;
+}
+
+.menu_item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu_link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	user-select: none;
+}
+
+.menu_link:hover,
+.menu_link:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #b6b1b1;
+	outline: none;
+}
+
+.menu_top .menu_item {
+	position: relative;
+	overflow: hidden;
+	margin: 0.5em;
+}
+
+.menu_top .menu_link {
+	position: relative;
+	z-index: 10;
+	text-align: center;
+	color: #5c4a4a;
+	transition: color 0.3s;
+}
+
+.menu-top .menu_link:hover,
+.menu-top .menu_link:focus {
+    color: #afafaf;
+}
+
+.menu_top .menu_item_current .menu_link {
+	color: #131212;
+}
+
+.menu_top .menu_item::before,
+.menu_top .menu_item::after,
+.menu_top .menu_link::before,
+.menu_top .menu_link::after {
+	content: '';
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+	background: #1b1b1b;
+	transition: transform 0.3s, opacity 0.3s;
+	transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* top and bottom line */
+.menu_top .menu_item::before,
+.menu_top .menu_item::after {
+	left: 0;
+	width: 100%;
+	height: 2px;
+}
+
+.menu_top .menu_item::before {
+	top: 0;
+	transform: translate3d(0, 15px, 0);
+}
+
+.menu_top .menu_item::after {
+	bottom: 0;
+	transform: translate3d(0, -15px, 0);
+}
+
+/* left and right line */
+.menu_top .menu_link::before,
+.menu_top .menu_link::after {
+	top: 0;
+	width: 2px;
+	height: 100%;
+}
+
+.menu_top .menu_link::before {
+	left: 0;
+	transform: translate3d(15px, 0, 0);
+}
+
+.menu_top .menu_link::after {
+	right: 0;
+	transform: translate3d(-15px, 0, 0);
+}
+
+.menu_top .menu_item_current::before,
+.menu_top .menu_item_current::after,
+.menu_top .menu_item_current .menu_link::before,
+.menu_top .menu_item_current .menu_link::after {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
 .about {
     padding: 2em;
+    background-color: #e7f9ff;
+    background-image: url('../img/about_bg.png');
+    background-size: cover;
 }
 
 .about h1 {
@@ -57,10 +184,34 @@
     font-size: 18px;
 }
 
+.portfolio {
+    background-image: url('../img/projects_bg.png');
+    background-color: #e3ccf5;
+    background-size: cover;
+    margin-top: 1em;
+}
+
 .project_one, .project_two, .project_three, .project_four, .project_five, .project_six {
     background-color: #ffffff;
-    margin: 1em 3.5em 1em 3.5em;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 1em;
     padding: 1em;
+}
+
+.project_one, .project_two {
+    margin-top: 2em;
+}
+
+.project_five, .project_six {
+    margin-bottom: 2em;
+}
+
+.project_one, .project_three, .project_five {
+    margin-left: 3em;
+}
+
+.project_two, .project_four, .project_six {
+    margin-right: 3em;
 }
 
 .portfolio h1 {
@@ -78,6 +229,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
+    padding-top: 9.5em;
 }
 
 .portfolio p {
@@ -91,13 +243,14 @@
 
 .view_project {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     padding: 0;
+    
 }
 
 .link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skills h3 {
