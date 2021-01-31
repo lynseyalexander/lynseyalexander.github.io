@@ -7,6 +7,7 @@
 
 .header {
     background-color: #ffffff;
+    padding: 2em 0 2em 0;
 }
 
 .header h1 {
@@ -15,7 +16,6 @@
     font-size: 52px;
     text-align: center;
     text-shadow: -2px 3px #b2afaf;
-    padding-top: 0.625em;
     margin-bottom: 0;
 }
 
@@ -23,13 +23,11 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-align: center;
-    margin-top: 0;
 }
 
 /* Common styles for menus */
 .menu {
-	line-height: 1;
-    margin: 0 auto 3em;
+    line-height: 1;
 }
 
 .menu_list {
@@ -37,11 +35,8 @@
 	display: -webkit-flex;
 	display: flex;
 	flex-wrap: wrap;
-    margin-top: 3em;
+    list-style: none;
     margin-bottom: 0;
-    margin-left: 3em;
-	padding: 0;
-	list-style: none;
 }
 
 .menu_item {
@@ -229,7 +224,6 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 600;
-    padding-top: 9.5em;
 }
 
 .portfolio p {
@@ -251,6 +245,15 @@ a {
 .link {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+}
+
+.link_proj {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.project_img:hover {
+    cursor: pointer;
 }
 
 .skills h3 {
@@ -298,7 +301,6 @@ a {
     font-size: 60px;
 }
 .footer {
-    background-color: lightyellow;
     text-align: center;
 }
 
