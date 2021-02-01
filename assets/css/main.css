@@ -244,7 +244,8 @@ a {
 
 .link {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    display: inline-block;
 }
 
 .link_proj {
@@ -254,6 +255,13 @@ a {
 
 .project_img:hover {
     cursor: pointer;
+}
+
+.skills {
+    margin-top: 1em;
+    background-color: #ffd298;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .skills h3 {
@@ -268,10 +276,22 @@ a {
 .fa-html5, .fa-css3-alt, .fa-js, .fa-vuejs, .fa-php, .fa-laravel, .fa-git-square, .fa-paint-brush, .fa-python, .fa-java {
     font-size: 74px;
     color: #c04747;
-    padding-top: 20px;
+    text-align: center;
 }
 .blog {
-    padding: 6em;
+    margin-top: 1em;
+    background-image: url('../img/blog_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #8ae88d;
+    padding: 2em 0 2em 0;
+
+}
+
+.blog_one, .blog_two, .blog_three {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    margin: 0 4em 0 4em;
 }
 
 .blog h2 {
@@ -294,7 +314,16 @@ a {
 }
 
 .contact {
-    background-color: #ffffff;
+    margin-top: 1em;
+    background-image: url('../img/contact_bg.png');
+    background-size: cover;
+    background-color: #e97a7a;
+    text-align: center;
+    padding: 1em;
+}
+
+.fa-heart {
+    color:darkred;
 }
 
 .contact_github, .fa-behance, .fa-twitter {
@@ -302,5 +331,15 @@ a {
 }
 .footer {
     text-align: center;
+    margin-top: 1em;
 }
 
+.footer p {
+    display: inline-block;
+}
+
+.footer h2 {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
