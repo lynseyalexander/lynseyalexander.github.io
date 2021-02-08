@@ -162,7 +162,7 @@ a {
 .about_desc p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    color: #141414;
+    color: #2c2c2c;
 }
 
 .key_skills h2 {
@@ -176,7 +176,8 @@ a {
     text-align: center;
     color: #141414;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .portfolio {
@@ -209,15 +210,29 @@ a {
     margin-right: 3em;
 }
 
+.project_links {
+    margin: 15px 0 15px 0;
+}
+
+.project_link {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #0a0a0a;
+    padding: 0px 0 0px 5px;
+}
+
 .portfolio h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
+    color: #0a0a0a;
 }
 
 .portfolio h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 300;
+    color: #525050;
 }
 
 .portfolio h3 {
@@ -229,28 +244,20 @@ a {
 .portfolio p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    color: #525050;
 }
 
 .fa-link, .fa-github {
     font-size: 26px;
+    color: #0a0a0a;
 }
 
 .view_project {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     padding: 0;
+    color: #0a0a0a;
     
-}
-
-.link {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
-    display: inline-block;
-}
-
-.link_proj {
-    margin: 0 auto;
-    padding: 0;
 }
 
 .project_img:hover {
