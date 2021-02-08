@@ -327,11 +327,29 @@ a {
     padding: 1em;
 }
 
+#name, #email, #message {
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    border-top: 4px solid #4e4c4c;
+    appearance: none;
+    padding: 12px;
+}
+
+.label {
+    font-weight: bold;
+    font-size: 20px;
+}
 .contact_github, .fa-behance, .fa-twitter {
     font-size: 60px;
     padding: 0;
     margin: 0;
 }
+.link_one, .link_two, .link_three {
+    padding: 0;
+    margin: 0;
+}
+
 .footer {
     text-align: center;
     margin-top: 1em;
