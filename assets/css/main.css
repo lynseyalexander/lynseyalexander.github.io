@@ -260,8 +260,13 @@ a {
     
 }
 
+.project_img {
+    background-color: none;
+}
+
 .project_img:hover {
     cursor: pointer;
+    background-color: pink;
 }
 
 .skills {
@@ -284,6 +289,18 @@ a {
     font-size: 74px;
     color: #c04747;
     text-align: center;
+}
+
+.skill_one, .skill_two, .skill_three, .skill_four, .skill_five, .skill_six, .skill_seven, .skill_eight, .skill_nine, .skill_ten  {
+    transition: transform 0.3s cubic-bezier(0.37, 0, 0.63, 1);
+}
+
+.skill_one:hover, .skill_two:hover, .skill_three:hover, .skill_four:hover, .skill_five:hover, .skill_six:hover, .skill_seven:hover, .skill_eight:hover, .skill_nine:hover, .skill_ten:hover {
+    transform: scale(1.2);
+}
+
+.fa-html5:hover, .fa-css3-alt:hover, .fa-js:hover, .fa-vuejs:hover, .fa-php:hover, .fa-laravel:hover, .fa-git-square:hover, .fa-paint-brush:hover, .fa-python:hover, .fa-java:hover {
+    color: #d95252;
 }
 .blog {
     margin-top: 1em;
