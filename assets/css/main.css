@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-
 .header {
     background-color: #ffffff;
     padding: 2em 0 2em 0;
@@ -260,10 +259,6 @@ a {
     
 }
 
-.project_img {
-    background-color: none;
-}
-
 .project_img:hover {
     cursor: pointer;
     background-color: pink;
@@ -316,25 +311,34 @@ a {
     background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     margin: 0 4em 0 4em;
+    padding-bottom: 1em;
 }
 
 .blog h2 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .blog p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
+    color: #525050;
+}
+
+.blog p b {
+    color: black;
 }
 
 .fa-eye {
-    font-size: 22px;
+    font-size: 20px;
+    padding-right: 10px;
 }
 
 .blog_link {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
+    text-align: center;
+    color: #0a0a0a;
 }
 
 .contact {
@@ -363,6 +367,7 @@ a {
 .label {
     font-weight: 600;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .btn.btn-primary {
@@ -392,12 +397,14 @@ a {
 
 .footer p {
     display: inline-block;
+     font-family: 'Open Sans', sans-serif;
 }
 
 .footer h2 {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
+     font-family: 'Open Sans', sans-serif;
 }
 
 .fa-heart {
