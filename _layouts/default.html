@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ title }}</title>
+        <title>Lynsey Alexander | Portfolio</title>
         <link rel="stylesheet" href="../assets/css/main.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,29 +23,31 @@
                     <div class="row">
                         <ul class="menu_list">
                             <li class="menu_item menu_item_current">
-                                <a href="#" class="menu_link">About</a>
+                                <a href="#about" class="menu_link">About</a>
                             </li>
                             <li class="menu_item">
-                                <a href="#" class="menu_link">Projects</a>
+                                <a href="#projects" class="menu_link">Projects</a>
                             </li>
                             <li class="menu_item">
-                                <a href="#" class="menu_link">Skills</a>
+                                <a href="#skills" class="menu_link">Skills</a>
                             </li>
                             <li class="menu_item">
-                                <a href="#" class="menu_link">Blog</a>
+                                <a href="#blog" class="menu_link">Blog</a>
                             </li>
                             <li class="menu_item">
-                                <a href="#" class="menu_link">Contact</a>
+                                <a href="#contact" class="menu_link">Contact</a>
                             </li>
                          </ul>
                      </div>
                  </nav>
             </header>
-            <section class="about row align-items-center">
+            <section class="about row align-items-center" id="about">
                 <div class="about_desc col">
                     <h1>{{ page.about_h1 }}</h1>
-                    <p>Hello :wave:, I'm Lynsey a <b>Web Designer</b> and <b>Developer</b> from Scotland. I love to craft brilliant websites. The
-                    best of which are showcased here. Thank you for visiting.</p>
+                    <article>
+                        <p>Hello :wave:, I'm Lynsey a <b>Web Designer</b> and <b>Developer</b> from Scotland. I love to craft brilliant websites. The
+                        best of which are showcased here. Thank you for visiting.</p>
+                    </article>
                 </div>
                 <div class="key_skills col">
                     <h2>Key Skills</h2>
@@ -66,7 +68,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio row">
+            <section class="portfolio row" id="projects">
                 <div class="row">
                     <article class="project_one col">
                         <div class="row">
@@ -84,20 +86,20 @@
                             </div>
                             <div class="col align-self-center">
                                 <h3>Project Brief</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nam, eligendi iusto error dolor quia delectus labore, blanditiis quod ex aut adipisci deleniti! Assumenda deleniti deserunt veritatis sapiente, nobis eius.</p>
-                                <a class="view_project"  href="">View Detailed Description</a>
+                                <p>I needed to create a portfolio website to supplement my CV. This needed to show potential employers the skills I have learned.</p>
+                                <p>The portfolio showcases my key skills and shows six examples of websites I have created I also describe how each project was created.</p>
                             </div>
                         </div>
                     </article>
                     <article class="project_two col">
                         <div class="row">
                             <div class="col">
-                                <h1>Blacks Website Redesign Concept</h1>
+                                <h1>New Scientist Redesign Concept</h1>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col align-self-center">
-                                <h2>Project Date</h2>
+                                <h2>March 2020</h2>
                                     <div class="row project_links no-gutters">
                                         <i class="fas fa-link col"><a href="" class="project_link">view site</a></i>
 
@@ -212,7 +214,7 @@
                         </article>
                     </div>
             </section>
-            <section class="skills row text-center align-items-center">
+            <section class="skills row text-center align-items-center" id="skills">
                 <div class="skill_one col">
                     <i class="fab fa-html5 active"></i>
                     <h3>HTML 5</h3>
@@ -254,12 +256,21 @@
                     <h3>Java</h3>
                 </div>
             </section>
-            <section class="blog row">
-                <div class="blog_one col px-0 text-center">
-                    <img class="active_blog img-fluid w-100" src="../assets/img/blog_thumbs/temp_blog_thumb.png" alt="blog thumbnail">
+            <section class="blog row" id="blog">
+                
+                <div class="blog_one col px-0 col-centered">
+                    <div class="blog_thumb">
+                        <img class="active_blog img-fluid w-100" src="../assets/img/blog_thumbs/temp_blog_thumb.png" alt="blog thumbnail">
+                        <h1 class="blog_title">Blog post title here</h1> 
+                    </div>
+                    <div class="blog_info">
                         <p><b>Posted: </b>1st Feb 2021</p>
                         <i class="far fa-eye"></i><a  class="blog_link" href="">View Blog Post...</a>
                     </div>
+                 </div>
+
+
+
                 <div class="blog_two col px-0 text-center">
                     <img class="img-fluid w-100" src="../assets/img/blog_thumbs/temp_blog_thumb.png" alt="blog thumbnail">
                         <p><b>Posted:</b>1st Feb 2021</p>
@@ -272,7 +283,7 @@
                         <i class="far fa-eye"></i><a class="blog_link" href="">View Blog Post...</a>
                 </div>
             </section>
-            <section class="contact row">
+            <section class="contact row" id="contact">
                 <div class="col">
                     <div class="row">
                         <div class="col">

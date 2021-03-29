@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Open+Sans:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap');
 
 .header {
     background-color: #ffffff;
@@ -98,50 +94,6 @@ a {
 	background: #1b1b1b;
 	transition: transform 0.3s, opacity 0.3s;
 	transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-/* top and bottom line */
-.menu_top .menu_item::before,
-.menu_top .menu_item::after {
-	left: 0;
-	width: 100%;
-	height: 2px;
-}
-
-.menu_top .menu_item::before {
-	top: 0;
-	transform: translate3d(0, 15px, 0);
-}
-
-.menu_top .menu_item::after {
-	bottom: 0;
-	transform: translate3d(0, -15px, 0);
-}
-
-/* left and right line */
-.menu_top .menu_link::before,
-.menu_top .menu_link::after {
-	top: 0;
-	width: 2px;
-	height: 100%;
-}
-
-.menu_top .menu_link::before {
-	left: 0;
-	transform: translate3d(15px, 0, 0);
-}
-
-.menu_top .menu_link::after {
-	right: 0;
-	transform: translate3d(-15px, 0, 0);
-}
-
-.menu_top .menu_item_current::before,
-.menu_top .menu_item_current::after,
-.menu_top .menu_item_current .menu_link::before,
-.menu_top .menu_item_current .menu_link::after {
-	opacity: 1;
-	transform: translate3d(0, 0, 0);
 }
 
 .about {
@@ -312,8 +264,35 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     margin: 0 4em 0 4em;
     padding-bottom: 1em;
+    position: absolute;
 }
 
+.blog_thumb {
+    position: relative;
+}
+
+.blog_thumb > img, .blog_title {
+    position: absolute;
+    background: rgba(61, 150, 203, 0.7);
+}
+
+.blog_info {
+   position: absolute;
+   top: 75%;
+   left: 19%;
+   width: 100%;
+   height: 100%;
+}
+
+.active_blog {
+    background: rgb(48, 133, 163);
+}
+
+.blog_title {
+    color: pink;
+    padding: 2em 1em 1em 1em;
+    font-size: 30px;
+}
 .blog h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
